@@ -6,7 +6,9 @@ body{
 
 }
 
-
+html{ 
+     scroll-behavior: smooth; 
+ }
 
 
 #navbar{
