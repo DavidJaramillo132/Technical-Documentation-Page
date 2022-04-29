@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <header><strong>CSS Documentation</strong></header>
+        <ul>
+            <li class="nav-link"><a href="#main-section_introduction">Introduction</a></li>
+            <li class="nav-link"><a href="#main-section_syntax">CSS Syntax</a></li>
+            <li class="nav-link"><a href="#main-section_selectors">CSS Selectors</a></li>
+            <li class="nav-link"><a href="#main-section_id_selector">The CSS id Selector</a></li>
+            <li class="nav-link"><a href="#main-section_class_selector">CSS class Selector</a></li>
+            <li class="nav-link"><a href="#main-universal_selector">CSS Universal Selector</a></li>
+            <li class="nav-link"><a href="#main-section_add_css">How To Add CSS</a></li>
+            <li class="nav-link"><a href="#main-section_comments">CSS Comments</a></li>
+            <li class="nav-link"><a href="#main-section_colors">CSS Colors</a></li> 
+
+        </ul>
+    </nav>
+    
+
+    <main id="main-doc">
+        <section class="main-section" id="main-section_introduction">
+            <header>Introduction</header>
+            <p>CSS is the language we use to style code a Web page. CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+            <code>
+                h1 {
+                    color: white;
+                    text-align: center;
+                  }
+            </code>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+            </ul>
+        </section>
+        <section class="main-section" id="main-section_syntax">
+            <header>CSS Syntax</header>
+            <p>The selector points to the HTML element you want to style.The declaration block contains one or more declarations separated by semicolons.Each declaration includes a CSS property name and a value, separated by a colon.Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+            <code>
+                p {
+                    color: red;
+                    text-align: center;
+                  }
+            </code>
+            <ul>
+                <li>p is a selector in CSS.</li>
+                <li>color is a property, and red is the property value</li>
+                <li>text-align is a property, and center is the property value</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="main-section_selectors">
+            <header>CSS Selectors</header>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.We can divide CSS selectors into five categories:</p>
+            <ul>
+                <li>Simple selectors (select elements based on name, id, class)</li>
+                <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            </ul>
+            <code>p {
+                text-align: center;
+                color: red;
+              }</code>
+        </section>
+
+        <section class="main-section" id="main-section_id_selector">
+            <header>The CSS id Selector</header>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element!.To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            <code>#para1 {
+                text-align: center;
+                color: red;
+              }</code>
+        </section>
+
+
+
+
+
+        <section class="main-section" id="main-section_class_selector">
+            <header>The CSS class Selector</header>
+            <p>The class selector selects HTML elements with a specific class attribute.To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+            <code>.center {
+                text-align: center;
+                color: red;
+              }</code>
+            <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+            <code>p.center {
+                text-align: center;
+                color: red;
+              }</code>
+        </section>
+
+
+        <section class="main-section" id="main-universal_selector">
+            <header>The CSS Universal Selector</header>
+            <p>The universal selector (*) selects all HTML elements on the page.</p>
+            <code>* {
+                text-align: center;
+                color: blue;
+              }</code>
+        </section>
+
+
+
+        <section class="main-section" id="main-section_add_css">
+            <header>How To Add CSS</header>
+            <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+
+        </section>
+        <section class="main-section" id="main-section_comments">
+            <header>CSS Comments</header>
+            <p>Comments are used to explain the code, and may help when you edit the source code at a later date. Comments are ignored by browsers.</p>
+            <code>/* This is a single-line comment */
+                p {
+                  color: red;
+                }</code>
+                <code>p {
+                    color: red;  /* Set text color to red */
+                  }</code>
+        </section>
+
+
+        <section class="main-section" id="main-section_colors">
+            <header>CSS Colors</header>
+            <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+            <p>In CSS, a color can be specified by using a predefined color name:</p>
+            <code>
+                style="background-color:DodgerBlue;"
+            </code>
+        </section>
+    </main>
+
+
+</body>
+</html>
